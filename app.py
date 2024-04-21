@@ -10,6 +10,10 @@ import os
 import streamlit as st
 import base64
 
+#settiong build env
+os.environ["ANTHROPIC_API_KEY"] = os.getenv("ANTHROPIC_API_KEY")
+os.environ["LANGCHAIN_TRACING_V2"]= True
+os.environ["LANGCHAIN_API_KEY"]= os.getenv("LANGCHAIN_API_KEY")
 
 #streamlit ui 
 st.set_page_config(page_title="Chat with ebeCodes", page_icon=":flashlight:", layout="centered")

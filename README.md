@@ -10,5 +10,5 @@
 
 ## Todos
     []-adding rags to it, someway a user can stay in session with their code as to give model context of the code snippet they uploaded 
-    []-deploying the app
+    [x]-deploying the app
 
