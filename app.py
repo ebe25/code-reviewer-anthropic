@@ -24,7 +24,7 @@ st.title("""
 #define your input
 
 ##upload using upload care and getting back the url 
-code_snippet = st.file_uploader("Upload a code snippet here")
+code_snippet = st.file_uploader("Upload a code snippet here",type="png")
 if code_snippet is not None:
     # Read the content of the uploaded file and encode it into base64
     img_base64 = base64.b64encode(code_snippet.read()).decode("utf-8")
