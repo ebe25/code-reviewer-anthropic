@@ -47,7 +47,7 @@ prompt = ChatPromptTemplate.from_messages([
 output_parser = StrOutputParser()
 
 #Paid api configuration
-llm = ChatAnthropic(api_key=os.getenv("ANTHROPIC_API_KEY"),model="claude-3-opus-20240229", temperature=0.2, max_tokens=3000)
+llm = ChatAnthropic(api_key=st.secrets("ANTHROPIC_API_KEY"),model="claude-3-opus-20240229", temperature=0.2, max_tokens=3000)
 
 
 #This is basically what langchain does adds wrapper to adding multiple functionalities to an llm
